@@ -1,0 +1,904 @@
+.dashadmin {
+    background-color: #F8F9FA;
+ width: 100%;
+}
+
+
+
+.bloc1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    width: calc(20% - 20px);
+    height: auto;
+    margin: auto;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+    
+    align-items: center;
+}
+
+.amount-percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1 0px;
+
+}
+
+.label {
+    font-size: 12px;
+    color: #A0AEC0;
+    margin-bottom: 26px;
+    
+}
+
+.amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.percentage {
+    font-size: 14px;
+    color: #4caf50;
+}
+
+.icon-background {
+    background: #0F2144;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-background img {
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width: 768px) {
+    .bloc1 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+
+        align-items: flex-start;
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .amount-percentage {
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .icon-background {
+        margin-top: 10px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bloc1 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(40%);
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+.bloc2 {
+    display: flex;
+    align-items: stretch;
+    margin-top: 20px;
+    padding: 0px 40px;
+    /* Consistent padding with .bloc3 */
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.card2-1,
+.card2-2 {
+    flex: 1;
+    /* Equal distribution */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.card2-1 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card2-1-info {
+    max-width: 50%;
+}
+
+.card2-1-info h3 {
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+.card2-1-info h2 {
+    font-size: 24px;
+}
+
+.card2-1-info p {
+    color: #718096;
+    font-size: 16px;
+}
+
+.card2-1-info button {
+    background: none;
+    border: none;
+    color: #060d4c;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card2-1-info button:hover {
+    text-decoration: underline;
+}
+
+
+
+.card2-1-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+.card2-2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    max-width: 500px;
+
+
+}
+
+.card2-2-content {
+    max-width: 100%;
+
+}
+
+.card2-2-content h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.card2-2-content p {
+    font-size: 14px;
+    color: white;
+
+}
+
+.card2-2 button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.card2-2 button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bloc2 {
+        flex-direction: column;
+        padding: 0px 20px;
+        /* Adjusted padding for consistency */
+    }
+
+    .card2-1,
+    .card2-2 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .card2-1 {
+        order: 2;
+
+        flex-direction: column;
+    }
+
+    .card2-1-info {
+        max-width: 100%;
+    }
+
+    .card2-1-image {
+        display: none;
+    }
+
+    .card2-2 button {
+
+        position: relative;
+        bottom: 0px;
+        left: 150px;
+
+
+    }
+
+    .card2-1-info button {
+
+
+        margin-top: 0px;
+        position: relative;
+        cursor: pointer;
+        font-size: 15px;
+        left: 130px;
+    }
+
+
+}
+
+
+
+
+
+.bloc3 {
+    display: flex;
+    align-items: stretch;
+    margin-top: 20px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.b3-left,
+.b3-right {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.b3-left {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: 40%;
+    /* Adjust width as needed */
+}
+
+
+
+
+
+.chart-container {
+    background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+    border-radius: 20px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chart-container {
+    height: 300px;
+    padding: 20px;
+
+}
+
+.active-users-summary {
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.active-users-change {
+    color: #A0AEC0;
+}
+
+.active-users-change span {
+    color: #4caf50;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    flex-basis: calc(25% - 20px);
+}
+
+
+.icon-label-container {
+    display: flex;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0F2144;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+}
+
+.stat-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.stat-value {
+    font-size: 20px;
+    color: #2D3748;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #A0AEC0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.progress-bar {
+    background-color: #A0AEC0;
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #0F2144;
+    border-radius: 4px;
+    height: 100%;
+}
+
+
+
+.b3-right {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: 55%;
+    /* Adjust width as needed */
+}
+
+
+
+.chartcon2 {
+    border-radius: 20px;
+    height: 400px;
+
+
+
+
+}
+
+.tot-student span {
+    color: #4caf50;
+}
+
+@media (max-width: 768px) {
+    .bloc3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .b3-left {
+        width: 100% !important;
+
+
+    }
+
+
+    .chart-container {
+
+        height: 250px;
+    }
+
+    .chartcon2 {
+        height: auto;
+    }
+
+    .b3-right {
+        width: 100% !important;
+        max-height: auto;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.bloc4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.b4-right {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+
+.b4-left {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 200px;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.b4-left h5,
+.b4-right h5 {
+    font-size: 1.5rem;
+    color: #2D3748;
+    margin-bottom: 0px;
+}
+
+.b4-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.b4-title p {
+    font-size: 14px;
+    color: #A0AEC0;
+
+}
+
+.b4-title span {
+    font-weight: bold;
+}
+
+.titles {
+    display: flex;
+    gap: 10px;
+    margin-top: 11px;
+}
+
+.titles p {
+    display: inline;
+}
+
+.b4-title img {
+    display: block;
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project-table th,
+.project-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-table th {
+    background-color: #ffffff;
+    color: #A0AEC0;
+}
+
+.member-icons img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -10px;
+    border: 3px solid white;
+}
+
+.additional-members {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    background-color: #060d4c;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    left: -15px;
+}
+
+.progresscontainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.progressbarm {
+    background-color: #718096;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.progressbar {
+    height: 5px;
+    background-color: #060d4c;
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.progresspercentage {
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    color: #060d4c;
+}
+
+
+
+
+
+
+/* EmailList.css */
+.email-list {
+    padding-top: 1em;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+}
+
+.email:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 6.5%;
+    top:80%;
+    width: 2px;
+    height: 2em;
+    background-color: #E2E8F0;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.email-icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.email-content {
+    flex-grow: 1;
+    padding-left: 1em;
+}
+
+.email-title,
+.email-date {
+    margin: 0;
+}
+
+.email-title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.email-date {
+    color: #666;
+    font-size: 0.8em;
+}
+
+.email:last-child::after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2560px) {
+    .dashadmin{
+        width: 100%;
+    }
+    .b4-left{
+        max-width: 60%;
+
+    }
+    .b4-right{
+        max-width: 35%;
+
+    }
+}
+@media screen and (min-width: 1030px) {
+    .b4-left{
+        max-width: 59%;
+
+    }
+    .b4-right{
+        max-width:35%;
+
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .b4-left,
+    .b4-right {
+        flex-basis: 100%;
+        /* Take full width */
+        margin-right: 0;
+        /* Remove margin between left and right on smaller screens */
+        margin-bottom: 20px;
+        /* Add some margin at the bottom */
+    }
+
+    .b4-right {
+        max-width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .bloc4 {
+        padding: 20px;
+        /* Consistent padding on all sides */
+    }
+
+    .project -table,
+    .email-list {
+        width: 100%;
+    }
+
+    .project-table th,
+    .project-table td,
+    .email-title,
+    .email-date {
+        padding: 4px;
+        font-size: 0.9rem;
+    }
+
+    .member-icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: -5px;
+    }
+
+    .additional-members {
+        left: -0px;
+    }
+
+    .progresscontainer,
+    .progressbarm,
+    .progressbar,
+    .progress-percentage {
+        height: 4px;
+        font-size: 0.8rem;
+    }
+
+    .email-icon img {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5em;
+    }
+
+    .email:not(:last-child)::after {
+        height: 0.5em;
+    }
+
+    .email {
+        padding: 1em 0.5em;
+    }
+
+    .email-title {
+        font-size: 0.9rem;
+    }
+
+    .email-date {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bloc4 {
+        padding: 15px;
+        /* This will give you the same padding from the sides */
+    }
+
+
+    .b4-title img,
+    .titles img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .titles,
+    .titles p,
+    .email-title,
+    .email-date {
+        font-size: 0.8rem;
+    }
+
+    .member-icons img,
+    .additional-members,
+    .progresscontainer,
+    .progressbarm,
+    .progressbar,
+    .progress-percentage {
+        font-size: 0.7rem;
+    }
+
+    .email-icon img {
+        margin-right: 0;
+    }
+
+    .email:not(:last-child)::after {
+        display: none;
+        /* Removing the vertical line on small devices */
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .bloc4 {
+        padding: 10px;
+    }
+
+    .project-table th,
+    .project-table td,
+    .email-title,
+    .email-date {
+        padding: 4px;
+        font-size: 0.5rem;
+    }
+
+    .b4-left,
+    .b4-right {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .b4-left h5,
+    .b4-right h5 {
+        font-size: 1.2rem;
+    }
+
+    .progresscontainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 30px;
+    }
+
+
+
+    .titles,
+    .titles p,
+    .email-title,
+    .email-date {
+        font-size: 0.7rem;
+    }
+
+    .b4-title img,
+    .titles img,
+    .email-icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .member-icons img,
+    .additional-members {
+        width: 15px;
+        height: 15px;
+        margin-right: -5px;
+    }
+
+
+}

@@ -1,0 +1,279 @@
+.blog-container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+  }
+  
+  .blog-header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .blog-header h5 {
+    color: white;
+    font-size: 80px;
+    margin-left: 50px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .blog-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 6.214px 9.766px 0px rgba(0, 0, 0, 0.02);
+  }
+  
+
+  .blog-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-container {
+    flex-grow: 1;
+    width: 100%;
+    margin-right: 10px; /* Provide spacing between title and category sections */
+    display: flex;
+    flex-direction: column;
+  }
+  .title-label{
+    color: #0F2144;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+
+  }
+   #title {
+    width: 100%;
+    max-width: 250px; /* Set the max width for the input */
+    padding: 10px;
+    border: 0.5px solid #A0AEC0;
+
+    border-radius: 5px;
+  }
+  
+  .category-container {
+    flex-grow: 1;
+  }
+  
+  .category-select {
+    width: 100%;
+    max-width: 200px; /* Set the max width for the select */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #0F2144;
+    color: white;
+  }
+  .category-select option{
+    background-color: white;
+    color: black;
+  }
+  .blog-middle-section {
+    margin-bottom: 20px;
+  }
+  
+  .blog-middle-section textarea {
+    width: 98%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    border-color: grey; /* Update border color */
+  }
+  /* ... existing styles ... */
+
+  .blog-bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will put space between the elements */
+    padding-top: 20px;
+  }
+  
+  .add-image-label {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 20px; /* Spacing between this card and additional images */
+    position: relative;
+    border: 1px solid #ccc; /* Optional border */
+  }
+  
+  .circle-plus {
+    background-color:#0F2144;
+    border-radius: 50%;
+    width: 40px; /* Diameter of the circle */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Spacing between the circle and the text */
+    text-align: center;
+  }
+  
+  .circle-plus:before {
+    content: '+';
+    color: white;
+    font-size: 30px;
+    line-height: 1;
+  }
+  
+  .add-image-label span {
+    font-size: 14px; /* Size of the 'ADD IMAGE' text */
+    color: #333;
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 1px; /* Optional: add spacing between letters */
+  }
+  
+  .image-upload {
+    display: none; /* Hide the actual file input */
+  }
+  
+
+.image-preview-card {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    margin: 5px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .delete-image-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .image-upload {
+    display: none;
+  }
+  
+/* Add this to keep the image preview cards aligned to the left */
+.image-preview-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows the container to grow and fill available space */
+  }
+  
+  .blog-submit-btn {
+    padding: 10px 20px;
+    background-color: #0F2144; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+    /* Hover effect */
+    &:hover {
+      background-color: #1A2A5E;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* ... existing styles ... */
+
+@media (max-width: 768px) { /* Tablet and down to mobile */
+  .blog-container {
+    padding-top: 80px;
+  }
+
+  .blog-header h5 {
+    font-size: 60px; /* Smaller font size for the header on smaller screens */
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+
+  .blog-top-section {
+    flex-direction: column; /* Stack the children vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px;
+  }
+
+  .title-container,
+  .category-container {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .category-select {
+    max-width: 100%; /* Full width select box */
+  }
+  .blog-bottom-section {
+    flex-direction: row; /* Keep items in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; 
+    justify-content: flex-start; /* Align items to the start */
+  }
+
+  .add-image-label {
+    width: 100px; /* Set width for the "Add Image" card */
+    height: 100px; /* Set height for the "Add Image" card */
+    margin-bottom: 20px; /* Space below the card */
+  }
+
+  .image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Maintain a gap between items */
+  }
+
+  .image-preview-card {
+    width: 100px; /* Match width of the "Add Image" card */
+    height: 100px; /* Match height of the "Add Image" card */
+  }
+
+  /* Adjust the submit button placement */
+  .blog-submit-btn {
+    width: auto; /* Keep button width automatic */
+    margin-top: 20px; /* Space above the submit button */
+    align-self: flex-start; /* Align to the start */
+  }
+}

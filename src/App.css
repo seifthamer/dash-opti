@@ -1,0 +1,25 @@
+.app {
+   
+    height: auto;
+  }
+  
+.app1{
+  display: flex;
+}
+  @media (max-width: 768px) {
+    .app1{
+      flex-direction: column;
+    }
+  }
+
+  .sidebar {
+ 
+    background-color: #f0f0f0; 
+    height: auto;
+
+  }
+  
+.dashadmin{
+  padding-top: 50px;
+  
+}

@@ -1,0 +1,212 @@
+.courses {
+  background-color: #F8F9FA;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.courses-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.courses-container h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.courses-table th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #A0AEC0;
+  font-weight: 400;
+}
+
+.courses-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.courses-table .titles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.course-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 12%;
+}
+
+.course-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.edit-link3, .trash-icon3 {
+  margin-left: 10px;
+  color: #A0AEC0;
+  text-decoration: none;
+}
+
+.trash-icon3 {
+  width: 24px;
+  height: auto;
+}
+
+.add-btn3 {
+  background-color: #0e0c3f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.btn-add3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ... Other styles ... */
+
+@media screen and (max-width: 768px) {
+  .courses-container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+
+  .titles p{
+    font-size: 17px;
+  }
+  .courses-table {
+    margin: 0 auto;
+    width: calc(100%);
+  }
+
+  .courses-table th {
+    display: none;
+  }
+
+
+  .courses-table thead{
+display: none;
+
+  }
+  .courses-table,
+  .courses-table tbody,
+  .courses-table tr,
+  .courses-table td {
+    display: block;
+  }
+
+  .courses-table tr {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.186);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .courses-table td {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .courses-table td:last-child {
+    border-bottom: none;
+  }
+
+  .courses-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    flex: 1;
+    text-align: left;
+  }
+
+  .titles img {
+    width: 30px;
+    height: 30px;
+    border-radius: 12%;
+    margin-right: 10px;
+  }
+
+  .titles {
+    display: flex;
+    align-items: center;
+  }
+
+  .course-text {
+    flex: 3;
+    text-align: center;
+  }
+
+  .course-actions {
+    justify-content: center;
+    margin-top: 10px;
+
+  }
+
+  .edit-link3, .trash-icon3 {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .trash-icon3 {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  .member-icons img{
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+  }
+  .additional-members{
+    width: 20px;
+    height: 20px;
+align-items: center;
+justify-content: center;
+display: flex;  }
+}
